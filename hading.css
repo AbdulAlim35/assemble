@@ -1,0 +1,62 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#menu {
+    background: #2d3436;
+}
+
+#menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+#menu li {
+    display: inline-block;
+    position: relative;
+
+}
+
+#menu li a {
+    display: block;
+    padding: 18px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+#menu li .nav-parent:hover {
+    background: #30336b;
+
+}
+
+#menu ul ul li {
+    display: block;
+}
+
+#menu ul ul li:hover ul {
+    display: block;
+}
+
+#menu ul ul li a:hover {
+    background: #1B9CFC;
+}
+
+.nav-child {
+    position: absolute;
+    left: 0;
+    top: 54;
+    background: #82589F;
+    display: none;
+
+}
+
+.nav-parent:hover .nav-child {
+    display: block;
+}
+
+
+.nav-parent:hover {
+    background-color: blue;
+}

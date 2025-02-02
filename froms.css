@@ -1,0 +1,50 @@
+.contact{
+    width: 80%;
+    border: 1px solid #ddd ;
+    margin: 20px auto;
+    padding: 5%;
+}
+.contact h1{
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+.contact p{
+    color: blueviolet;
+}
+.contact from {
+    margin-top: 20px;
+}
+.child_from{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.child_from label{
+   display: block;
+   margin-bottom: 5px;
+}
+.child_from input, .child_from select{
+   border: 1px solid #ddd;
+   border-radius: 5px;
+   padding: 10px 3%;
+   width: 94%;
+   cursor: pointer;
+ }
+ .child_from select{
+    width: 100%;
+ }
+ .child_from input[type='button']{
+    width: 150px;
+   background-color: rgb(192, 13, 153);
+   color: white;
+   
+  }
+  .child_from input[type='button']:hover{
+    width: 150px;
+   background-color: cornflowerblue;
+   color: rgb(22, 21, 21)
+  }
+
+.child_from:last-child{
+    margin-bottom: 0px;
+}

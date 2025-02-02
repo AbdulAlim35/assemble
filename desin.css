@@ -1,0 +1,116 @@
+:root{
+    --primaryFont: "Montserrat", serif;
+    --secFonr:  "Fraunces", serif;
+    --darkCyan: hsl(158,36%,37%);
+    --cremColor: hsl(30,38%,92%);
+    --veryDarkblue: hsl(212,12%,14%);
+    --darkGrayishblue: hsl(228,12%,48%);
+    --white: hsl(0,0%,100%);
+}
+*, *::after, *::before{
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+}
+body{
+    font-family: var(--primaryFont);
+    font-weight: 500;
+    background: var(--cremColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1,h2,h3,h4,h5,h6{
+  font-weight: 700;
+  font-family: var(--secFonr);
+  margin-bottom: 15px;
+}
+p{
+ font-weight: 500;
+ margin-bottom: 15px;
+}
+img{
+    max-width: 100%;
+}
+.card{
+    width: 900px;
+    display: flex;
+}
+.card_img{
+    flex-basis: 40%;
+}
+.card_img img.desktop{
+    border-radius: 10px 0 0 10px;
+}
+.card_body{
+    flex-basis: 40%;
+    background: var(--white);
+    border-radius: 0 10px 10px 0;
+    padding: 30px;
+}
+.card_body h2{
+    color: var(--veryDarkblue);
+    font-size: 40px;
+}
+.card_body h6{
+    color: var(--darkGrayishblue);
+    font-family: var(--primaryFont);
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.card_body p{
+    font-size: 18px;
+    color: var(--darkGrayishblue);
+    line-height: 1.5em;
+}
+.card_body p.price{
+    font-family: var(--secFonr);
+    color: var(--darkCyan);
+    font-size: 32px;
+
+}
+.card_body p.price span{
+    font-family: var(--primaryFont);
+    color: var(--veryDarkblue); 
+    font-size: 18px;
+    text-decoration: line-through;
+    position: relative;
+    top: -5px;   
+}
+.card_body button{
+    background: var(--darkCyan);
+    border: 0;
+    width: 100%;
+    padding: 15px;
+    border-radius: 15px;
+    color: var(--white);
+    font-weight: 500;
+}
+.card_body button img{
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    width: 15px;
+   
+}
+ @media only screen and (max-width: 600px){
+   body{
+    align-items: flex-start;
+   }
+    .card{
+    width: 90%;
+    flex-direction: column;
+    margin-top:20px ;
+   }
+   .card_body{
+    border-radius:0 0 20px 20px ;
+   }
+ }   
+    
+    
